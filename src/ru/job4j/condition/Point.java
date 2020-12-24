@@ -14,6 +14,6 @@ public class Point {
         result = Point.distance(10, 10, 20, 20);
         System.out.println("result (10, 10) to (20, 20) " + result);
         result = Point.distance(7, 14, 25, 30);
-        System.out.println("result (7, 14) to (25,30) " + result);
+        System.out.println("result (7, 14) to (25, 30) " + result);
     }
 }
