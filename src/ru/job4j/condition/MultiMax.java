@@ -4,15 +4,10 @@ public class MultiMax {
     public static int max(int first, int second, int third) {
         // int res = first >= second ? first : second;
         // return res >= third ? res : third;
-        int res;
-        if (first >= second) {
-            res = first;
+        if (first >= second && first >= third) {
+            return first;
         } else {
-            res = second;
+            return second >= third ? second : third;
         }
-        if (res <= third) {
-            res = third;
-        }
-        return res;
     }
 }
