@@ -48,4 +48,22 @@ public class PointTest {
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when2PointsIn2D() {
+        float exp = 4.24f;
+        Point a = new Point(-1, -1);
+        Point b = new Point(2, 2);
+        double out = a.distance(b);
+        Assert.assertEquals(exp, out, 0.01);
+    }
+
+    @Test
+    public void when2PointsIn3D() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(1, 1, 1);
+        double out = a.distance3d(b);
+        float exp = 1.73f;
+        Assert.assertEquals(exp, out, 0.01);
+    }
 }
