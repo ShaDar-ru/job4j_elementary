@@ -59,6 +59,15 @@ public class PointTest {
     }
 
     @Test
+    public void when2PointsIn2D2() {
+        float exp = 2f;
+        Point a = new Point(0, 0);
+        Point b = new Point(2, 0);
+        double out = a.distance(b);
+        Assert.assertEquals(exp, out, 0.01);
+    }
+
+    @Test
     public void when2PointsIn3D() {
         Point a = new Point(0, 0, 0);
         Point b = new Point(1, 1, 1);
